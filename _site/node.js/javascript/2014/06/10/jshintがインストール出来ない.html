@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+	<meta charset="utf-8">
+	<!-- (1) Optimize for mobile versions: http://goo.gl/EOpFl -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- (1) force latest IE rendering engine: bit.ly/1c8EiC9 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>jshintがインストール出来ない</title>
+	<meta name="description" content="jshintをインストールしようとするとエラーが出る" />
+
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@uuutee" />
+		<meta name="twitter:title" content="jshintがインストール出来ない" />
+		<meta name="twitter:image" content="http://localhost:4000/assets/images/logo.png" />
+		
+			<meta name="twitter:description"  content="jshintをインストールしようとするとエラーが出る" />
+		
+	
+	
+	<meta property="og:site_name" content="uuutee.log" />
+	<meta property="og:title" content="jshintがインストール出来ない"/>
+	
+		<meta property="og:description" content="jshintをインストールしようとするとエラーが出る" />
+	
+	<meta property="og:image" content="http://localhost:4000/assets/images/logo.png" />
+	<meta property="og:url" content="http://localhost:4000/node.js/javascript/2014/06/10/jshint%E3%81%8C%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E5%87%BA%E6%9D%A5%E3%81%AA%E3%81%84.html" >
+	<meta property="og:type" content="blog" />
+	<meta property="article:published_time" content="2014-06-10T00:00:00+09:00">
+
+	<link rel="canonical" href="http://localhost:4000/node.js/javascript/2014/06/10/jshint%E3%81%8C%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E5%87%BA%E6%9D%A5%E3%81%AA%E3%81%84.html"/>
+	<link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png"/>
+	<link rel="stylesheet" href="//brick.a.ssl.fastly.net/Linux+Libertine:400,400i,700,700i/Open+Sans:400,400i,700,700i">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="print" href="/css/print.css" />
+</head>
+
+	<body itemscope itemtype="http://schema.org/Article">
+		<!-- header start -->
+
+<a href="http://localhost:4000" class="logo-readium"><span class="logo" style="background-image: url(/assets/images/logo.png)"></span></a>
+
+<!-- header end -->
+
+		<main class="content" role="main">
+			<article class="post">
+				
+					<div class="noarticleimage">
+						<div class="post-meta">
+							<h1 class="post-title">jshintがインストール出来ない</h1>
+							<div class="cf post-meta-text">
+								<h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person"></h4>
+								on
+								<time datetime="2014-06-10T00:00:00+09:00">10 Jun 2014</time>
+							</div>
+						</div>
+					</div>
+					<br>
+					<br>
+					<br>
+				
+				<section class="post-content">
+					<div class="post-reading">
+						<span class="post-reading-time"></span> read
+					</div>
+					<a name="topofpage"></a>
+					<p>jshintをインストールしようとするとエラーが出る</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>npm ERR! error rolling back Error: ENOTEMPTY, rmdir '/usr/local/lib/node_modules/jshint/node_modules/minimatch'
+npm ERR! error rolling back  jshint@2.5.1 { [Error: ENOTEMPTY, rmdir '/usr/local/lib/node_modules/jshint/node_modules/minimatch']
+npm ERR! error rolling back   errno: 53,
+npm ERR! error rolling back   code: 'ENOTEMPTY',
+npm ERR! error rolling back   path: '/usr/local/lib/node_modules/jshint/node_modules/minimatch' }
+npm ERR! Error: No compatible version found: date-now@'^0.1.4'
+npm ERR! Valid install targets:
+npm ERR! ["0.1.0","0.1.1","0.1.3","0.1.2","0.1.4","1.0.0"]
+npm ERR!     at installTargetsError (/usr/local/lib/node_modules/npm/lib/cache.js:682:10)
+npm ERR!     at /usr/local/lib/node_modules/npm/lib/cache.js:597:10
+npm ERR!     at saved (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/get.js:138:7)
+npm ERR!     at Object.oncomplete (fs.js:297:15)
+npm ERR! If you need help, you may report this log at:
+npm ERR!     &lt;http://github.com/isaacs/npm/issues&gt;
+npm ERR! or email it to:
+npm ERR!     &lt;npm-@googlegroups.com&gt;
+npm ERR! System Darwin 13.2.0
+npm ERR! command "node" "/usr/local/bin/npm" "install" "-g" "jshint"
+npm ERR! cwd /Users/ut/Documents/Xcode/MyTemplate
+npm ERR! node -v v0.8.22
+npm ERR! npm -v 1.2.14
+</code></pre>
+</div>
+
+<p>とか出る。<br />
+homebrewでnodeを削除してみるものの、なぜか <code class="highlighter-rouge">node -v</code> で <code class="highlighter-rouge">v0.8.22</code> が表示される。<br />
+以前、手動でインストールしたnodeが残っててそれが原因の模様。</p>
+
+<p>http://sushichop.blogspot.jp/2013-04-nodejs.html<br />
+上記サイトの手順に則ってnodeを手動削除。</p>
+
+<p>homebrewで再度nodeをインストールする。</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ brew install node
+</code></pre>
+</div>
+
+<p>再度インストール</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>$ npm install -g jshint
+</code></pre>
+</div>
+
+<p>で、インストール完了。</p>
+
+
+				</section>
+				<footer class="post-footer">
+					<section class="share">
+						
+							
+								<a class="icon-twitter" href="http://twitter.com/share?text=jshint%E3%81%8C%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E5%87%BA%E6%9D%A5%E3%81%AA%E3%81%84&amp;url=http://localhost:4000/node.js/javascript/2014/06/10/jshintがインストール出来ない"
+									onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;">
+								<i class="fa fa-twitter"></i><span class="hidden">twitter</span>
+								</a>
+							
+						
+							
+						
+					</section>
+				</footer>
+			</article>
+		</main>
+		<div class="bottom-closer">
+			<div class="background-closer-image"  style="background-image: url(/assets/images/mainimg.jpg)">
+				Image
+			</div>
+			<div class="inner">
+				<h1 class="blog-title">uuutee.log</h1>
+				<h2 class="blog-description">I AM WEB DEVELOPER
+</h2>
+				<a href="/" class="btn">TOPに戻る</a>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
+<script type="text/javascript" src="/assets/js/index.js"></script>
+<script type="text/javascript" src="/assets/js/readingTime.min.js"></script>
+<script>
+(function ($) {
+  "use strict";
+  $(document).ready(function(){
+
+    var $window = $(window),
+    $image = $('.post-image-image, .teaserimage-image');
+    
+      $window.on('scroll', function() {
+        var top = $window.scrollTop();
+
+        if (top < 0 || top > 1500) { return; }
+        $image
+          .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
+          .css('opacity', 1-Math.max(top/700, 0));
+      });
+      $window.trigger('scroll');
+
+      var height = $('.article-image').height();
+      $('.post-content').css('padding-top', height + 'px');
+
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+         && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({ scrollTop: target.offset().top }, 500);
+            return false;
+          }
+        }
+      });
+
+  });
+}(jQuery));
+</script>
+
+
+	</body>
+</html>

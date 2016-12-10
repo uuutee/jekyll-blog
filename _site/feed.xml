@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 10 Dec 2016 23:32:43 +0900</pubDate>
-    <lastBuildDate>Sat, 10 Dec 2016 23:32:43 +0900</lastBuildDate>
+    <pubDate>Sun, 11 Dec 2016 01:35:46 +0900</pubDate>
+    <lastBuildDate>Sun, 11 Dec 2016 01:35:46 +0900</lastBuildDate>
     <generator>Jekyll v3.3.1</generator>
     
       <item>
@@ -253,6 +253,105 @@
         <link>http://localhost:4000/frontend/2015/05/21/%E3%82%88%E3%81%8F%E3%81%A4%E3%81%8B%E3%81%86%E3%82%A8%E3%83%B3%E3%83%86%E3%82%A3%E3%83%86%E3%82%A3%E3%82%92%E3%83%A1%E3%83%A2.html</link>
         <guid isPermaLink="true">http://localhost:4000/frontend/2015/05/21/%E3%82%88%E3%81%8F%E3%81%A4%E3%81%8B%E3%81%86%E3%82%A8%E3%83%B3%E3%83%86%E3%82%A3%E3%83%86%E3%82%A3%E3%82%92%E3%83%A1%E3%83%A2.html</guid>
         
+        
+        <category>frontend</category>
+        
+      </item>
+    
+      <item>
+        <title>Chrome Devtools 便利ショートカット</title>
+        <description>&lt;p&gt;タブ内の移動&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cmd + []
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;要素を編集 (Edit as HTML)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;F2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;プロパティを編集 (Edit Attribute)&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Enter
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;次の/前のプロパティを選択&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;tab / shift + tab
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;cssプロパティをフィルタリングする&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Find in Stylesにcolorなどを入れて、←で親要素をたどる&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;参考&quot;&gt;参考&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://qiita.com/dayoshix/items/0d4043bf7dbaa1dc9184&quot;&gt;フロントエンドエンジニアになってから11ヶ月間で覚えたちょっと捗るChromeの使い方&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Wed, 03 Dec 2014 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/chrome/2014/12/03/Chrome-Devtools-%E4%BE%BF%E5%88%A9%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88.html</link>
+        <guid isPermaLink="true">http://localhost:4000/chrome/2014/12/03/Chrome-Devtools-%E4%BE%BF%E5%88%A9%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88.html</guid>
+        
+        
+        <category>chrome</category>
+        
+      </item>
+    
+      <item>
+        <title>Chrome DevTools Tips</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;cssのプロパティをcmd + クリックで、該当の箇所をsourceで開く&lt;/li&gt;
+  &lt;li&gt;source
+    &lt;ul&gt;
+      &lt;li&gt;alt + クリックで矩形選択&lt;/li&gt;
+      &lt;li&gt;cmd + dでマルチセレクト&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;console
+    &lt;ul&gt;
+      &lt;li&gt;monitorEvents(window, ‘click’);
+        &lt;ul&gt;
+          &lt;li&gt;クリックでログが取れる&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;参考&quot;&gt;参考&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://devtoolstips.com/&quot;&gt;DevToolsTips&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 12 Oct 2014 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/chrome/2014/10/12/Chrome-DevTools-Tips.html</link>
+        <guid isPermaLink="true">http://localhost:4000/chrome/2014/10/12/Chrome-DevTools-Tips.html</guid>
+        
+        
+        <category>chrome</category>
+        
+      </item>
+    
+      <item>
+        <title>表示しているページのinputタグをカウントする</title>
+        <description>&lt;p&gt;developer toolsのconsoleで下記を入力&lt;br /&gt;
+※jQueryが読まれていることが前提。&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;console.log($('input').length);
+// 1630
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+</description>
+        <pubDate>Tue, 07 Oct 2014 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/chrome/frontend/2014/10/07/%E8%A1%A8%E7%A4%BA%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AEinput%E3%82%BF%E3%82%B0%E3%82%92%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%99%E3%82%8B.html</link>
+        <guid isPermaLink="true">http://localhost:4000/chrome/frontend/2014/10/07/%E8%A1%A8%E7%A4%BA%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%AEinput%E3%82%BF%E3%82%B0%E3%82%92%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%99%E3%82%8B.html</guid>
+        
+        
+        <category>chrome</category>
         
         <category>frontend</category>
         
