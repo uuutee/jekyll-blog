@@ -7,8 +7,8 @@
 	<!-- (1) force latest IE rendering engine: bit.ly/1c8EiC9 -->
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>ハッシュ化と暗号化</title>
-	<meta name="description" content="  ハッシュ化          不可逆である      SHA1やMD5関数で行う      パスワード認証に使われる                  DBにはハッシュ化した値を保存          パスワード入力時に値をハッシュ化して、DBのものと比較して正であることを確認する          パスワードを忘れたときは、もとの値がわからないので、再設定を促す            ..." />
+	<title>sublime text で拡張子ごとにsyntaxを設定する</title>
+	<meta name="description" content="Application Support内に、適用したい syntaxの名前.sublime-settings を作成" />
 
 	<meta name="HandheldFriendly" content="True" />
 	<meta name="MobileOptimized" content="320" />
@@ -17,24 +17,24 @@
 	
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:site" content="@uuutee" />
-		<meta name="twitter:title" content="ハッシュ化と暗号化" />
+		<meta name="twitter:title" content="sublime text で拡張子ごとにsyntaxを設定する" />
 		<meta name="twitter:image" content="http://localhost:4000/assets/images/logo.png" />
 		
-			<meta name="twitter:description"  content="  ハッシュ化          不可逆である      SHA1やMD5関数で行う      パスワード認証に使われる                  DBにはハッシュ化した値を保存          パスワード入力時に値をハッシュ化して、DBのものと比較して正であることを確認する          パスワードを忘れたときは、もとの値がわからないので、再設定を促す            ..." />
+			<meta name="twitter:description"  content="Application Support内に、適用したい syntaxの名前.sublime-settings を作成" />
 		
 	
 	
 	<meta property="og:site_name" content="uuutee.log" />
-	<meta property="og:title" content="ハッシュ化と暗号化"/>
+	<meta property="og:title" content="sublime text で拡張子ごとにsyntaxを設定する"/>
 	
-		<meta property="og:description" content="  ハッシュ化          不可逆である      SHA1やMD5関数で行う      パスワード認証に使われる                  DBにはハッシュ化した値を保存          パスワード入力時に値をハッシュ化して、DBのものと比較して正であることを確認する          パスワードを忘れたときは、もとの値がわからないので、再設定を促す            ..." />
+		<meta property="og:description" content="Application Support内に、適用したい syntaxの名前.sublime-settings を作成" />
 	
 	<meta property="og:image" content="http://localhost:4000/assets/images/logo.png" />
-	<meta property="og:url" content="http://localhost:4000/php/2016/10/15/%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E5%8C%96%E3%81%A8%E6%9A%97%E5%8F%B7%E5%8C%96.html" >
+	<meta property="og:url" content="http://localhost:4000/sublime%20text/2016/02/13/sublime-text%E3%81%A7%E6%8B%A1%E5%BC%B5%E5%AD%90%E3%81%94%E3%81%A8%E3%81%ABsyntax%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B.html" >
 	<meta property="og:type" content="blog" />
-	<meta property="article:published_time" content="2016-10-15T00:00:00+09:00">
+	<meta property="article:published_time" content="2016-02-13T00:00:00+09:00">
 
-	<link rel="canonical" href="http://localhost:4000/php/2016/10/15/%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E5%8C%96%E3%81%A8%E6%9A%97%E5%8F%B7%E5%8C%96.html"/>
+	<link rel="canonical" href="http://localhost:4000/sublime%20text/2016/02/13/sublime-text%E3%81%A7%E6%8B%A1%E5%BC%B5%E5%AD%90%E3%81%94%E3%81%A8%E3%81%ABsyntax%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B.html"/>
 	<link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png"/>
 	<link rel="stylesheet" href="//brick.a.ssl.fastly.net/Linux+Libertine:400,400i,700,700i/Open+Sans:400,400i,700,700i">
 	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -55,11 +55,11 @@
 				
 					<div class="noarticleimage">
 						<div class="post-meta">
-							<h1 class="post-title">ハッシュ化と暗号化</h1>
+							<h1 class="post-title">sublime text で拡張子ごとにsyntaxを設定する</h1>
 							<div class="cf post-meta-text">
 								<h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person"></h4>
 								on
-								<time datetime="2016-10-15T00:00:00+09:00">15 Oct 2016</time>
+								<time datetime="2016-02-13T00:00:00+09:00">13 Feb 2016</time>
 							</div>
 						</div>
 					</div>
@@ -72,36 +72,23 @@
 						<span class="post-reading-time"></span> read
 					</div>
 					<a name="topofpage"></a>
-					<ul>
-  <li>ハッシュ化
-    <ul>
-      <li>不可逆である</li>
-      <li>SHA1やMD5関数で行う</li>
-      <li>パスワード認証に使われる
-        <ul>
-          <li>DBにはハッシュ化した値を保存</li>
-          <li>パスワード入力時に値をハッシュ化して、DBのものと比較して正であることを確認する</li>
-          <li>パスワードを忘れたときは、もとの値がわからないので、再設定を促す</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>暗号化
-    <ul>
-      <li>可逆である</li>
-      <li>可逆なので復号ができる
-        <ul>
-          <li>encrypt と decrypt</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-</ul>
+					 <p>Application Support内に、適用したい <code class="highlighter-rouge">syntaxの名前.sublime-settings</code> を作成</p>
 
-<h2 id="参考">参考</h2>
-<p><a href="http://blog.goo.ne.jp/xmldtp/e/b6a697735a597e8e41af460ae2f2875a">ハッシュ化と暗号化は違う。ハッシュ化（SHA1,MD5)すると、元には戻らない - ウィリアムのいたずらの開発日記</a><br />
-<a href="http://book.cakephp.org/2.0/ja/core-utility-libraries/security.html">Security</a><br />
-<a href="http://be-hase.com/php/239/">CakePHPで個人情報をDBに保存する際に、暗号化しておく話。 | be-hase.com</a></p>
+<div class="highlighter-rouge"><pre class="highlight"><code>~/Library/Application Support/Sublime Text 3/Packages/User/JavaScript.sublime-settings
+</code></pre>
+</div>
+
+<p>内容は下記の通り、 extensions に 適用したい拡張子を配列で指定。</p>
+
+<div class="language-json highlighter-rouge"><pre class="highlight"><code><span class="p">{</span><span class="w">
+	</span><span class="nt">"extensions"</span><span class="p">:</span><span class="w">
+	</span><span class="p">[</span><span class="w">
+		</span><span class="s2">"jsf"</span><span class="w">
+	</span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre>
+</div>
 
 
 				</section>
@@ -109,7 +96,7 @@
 					<section class="share">
 						
 							
-								<a class="icon-twitter" href="http://twitter.com/share?text=%E3%83%8F%E3%83%83%E3%82%B7%E3%83%A5%E5%8C%96%E3%81%A8%E6%9A%97%E5%8F%B7%E5%8C%96&amp;url=http://localhost:4000/php/2016/10/15/ハッシュ化と暗号化"
+								<a class="icon-twitter" href="http://twitter.com/share?text=sublime+text+%E3%81%A7%E6%8B%A1%E5%BC%B5%E5%AD%90%E3%81%94%E3%81%A8%E3%81%ABsyntax%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B&amp;url=http://localhost:4000/sublime%20text/2016/02/13/sublime textで拡張子ごとにsyntaxを設定する"
 									onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;">
 								<i class="fa fa-twitter"></i><span class="hidden">twitter</span>
 								</a>

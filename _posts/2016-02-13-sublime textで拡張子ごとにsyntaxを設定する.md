@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "sublime text で拡張子ごとにsyntaxを設定する"
-date:   2016-02-13
-categories: "sublime text"
+title: "sublime text で拡張子ごとにsyntaxを設定する"
+date: 2016-02-13
+categories: 
+- sublime text
 published: true
 ---
 

@@ -56,3 +56,13 @@ social:
 #    share_url:
 #    share_title:
 #    share_link:
+
+# category archive
+category_title_prefix: ''
+category_title_suffix: ''
+category_dir: category
+
+minItemsToShowToc: 1 # 目次の項目を表示する最小数 
+tocTopTag: h2 # 目次の項目となる見出しの要素。h1〜h5まで指定可能。
+anchorPrefix: tocAnchor- # 見出し要素のID属性に付与する接頭辞
+showToggleButton: false # トグルボタンの表示非表示
