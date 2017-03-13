@@ -67,6 +67,27 @@ published: true
 
 
 
+## findで検索したファイルをsedで置換する
+findの print と  xargs -0 オプションで空白文字を含んだファイルパスを置換できる  
+
+```sh
+	# linux
+	$ find . -type f -print0 | xargs -0 sed -i 's/置換前/置換後/g'
+
+	# mac
+	$ find . -type f -print0 | xargs -0 sed -i '' -e 's/置換前/置換後/g'
+```
+
+
+日本語ファイル名でうまく置換できないときはexecオプションを使用する
+
+```sh
+	$ find . -type f -exec sed -i '' -e "s/置換前/置換後/g" {} \;
+```
+
+
+
+
 ## sed で 特殊な文字を置換する
 
 e.g. `'share' . DS . 'cakephp' . DS . 'current'`
@@ -140,6 +161,9 @@ sedの場合、改行コードへの置換が、`\n` で行えない。
 [grepとsedでファイルの内容を一括変換:Mac OS X | ゆるメモ](http://notes.applifirst.jp/2014/06/09/43/)  
 [sed の s コマンドの区切り文字は変更できる | CUBE SUGAR STORAGE](http://momijiame.tumblr.com/post/68363821454/sed-%E3%81%AE-s-%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%AE%E5%8C%BA%E5%88%87%E3%82%8A%E6%96%87%E5%AD%97%E3%81%AF%E5%A4%89%E6%9B%B4%E3%81%A7%E3%81%8D%E3%82%8B)　　
 [sedコマンドの備忘録 - Qiita](http://qiita.com/takech9203/items/b96eff5773ce9d9cc9b3)
+
+### macのsed
+[find ~ xargs ~ sedをやろうとしたら厳しかったのでRubyを使った話 - Qiita](http://qiita.com/giiko_/items/6b6ff23c707932491b6f)  
 
 ### 改行について  
 [sedコマンドで改行(LF)に変換したいと思ったら、trコマンド - RLB](http://rksz.hateblo.jp/entry/2013/03/11/085556)  
