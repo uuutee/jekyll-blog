@@ -5,27 +5,28 @@ layout: default
 	<h1 class="blog-title">{{ page.title }}</h1>
 </header>
 
-<main class="content" role="main">
-
-	<div class="cf frame">
-		{% for post in site.posts %}
-			{% for category in post.categories %}
-				{% if category == page.category %}
-				<article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-					<div class="article-item">
-						<header class="post-header">
-							<h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-						</header>
-						<section class="post-excerpt" itemprop="description">
-							<p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-						</section>
-						<div class="post-meta">
-							<time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+<main class="main" role="main">
+	<div class="main__inner">
+		<div class="frame clearfix">
+			{% for post in site.posts %}
+				{% for category in post.categories %}
+					{% if category == page.category %}
+					<article class="article" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+						<div class="article__inner">
+							<header class="article__header">
+								<h2 class="article__title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+							</header>
+							<section class="article__excerpt" itemprop="description">
+								<p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+							</section>
+							<div class="article__meta">
+								<time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+							</div>
 						</div>
-					</div>
-				</article>
-				{% endif %}
+					</article>
+					{% endif %}
+				{% endfor %}
 			{% endfor %}
-		{% endfor %}
+		</div>
 	</div>
 </main>

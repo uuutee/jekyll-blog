@@ -1,17 +1,17 @@
 ---
-layout: default
+layout: home
 ---
 
-<div class="teaserimage">
-	<div class="teaserimage-image" {% if site.cover %}style="background-image: url({{ site.cover }})"{% endif %}>
+<div class="mainimage">
+	<div class="mainimage__img" {% if site.cover %}style="background-image: url({{ site.cover }})"{% endif %}>
 		Teaser Image
 	</div>
 </div>
 
-<header class="blog-header">
-	<h1 class="blog-title">{{ site.title }}</h1>
-	<h2 class="blog-description">{{ site.description }}</h2>
-	<div class="custom-links">
+<header class="header">
+	<h1 class="header__title">{{ site.title }}</h1>
+	<h2 class="header__description">{{ site.description }}</h2>
+	<div class="header__links">
 		{% for social in site.social %}
 			{% if social.url %}
 				<a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}">
@@ -22,43 +22,20 @@ layout: default
 	</div>
 </header>
 
-<main class="content" role="main">
+<main class="main" role="main">
+	<div class="main__inner">
 
-	{% if site.tags.featured %}
-		<h5 class="index-headline featured"><span>Featured</span></h5>
-
-		<div class="container featured">
-			{% for post in site.tags.featured %}
-				<article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-					<div class="article-item">
-						<header class="post-header">
-							<h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-						</header>
-						<section class="post-excerpt" itemprop="description">
-							<p>{{ post.content | strip_html | truncatewords: 50 }}</p>
-						</section>
-						<div class="post-meta">
-							<time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
-						</div>
-					</div>
-				</article>
-			{% endfor %}
-		</div>
-
-		<h5 class="index-headline normal"><span>Regular</span></h5>
-	{% endif %}
-
-	<div class="cf frame">
+	<div class="frame clearfix">
 		{% for post in paginator.posts %}
-			<article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-				<div class="article-item">
-					<header class="post-header">
-						<h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+			<article class="article" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+				<div class="article__inner">
+					<header class="article__header">
+						<h2 class="article__title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
 					</header>
-					<section class="post-excerpt" itemprop="description">
+					<section class="article__excerpt" itemprop="description">
 						<p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
 					</section>
-					<div class="post-meta">
+					<div class="article__meta">
 						<time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
 					</div>
 				</div>
@@ -80,8 +57,5 @@ layout: default
 		{% endif %}
 	</nav>
 
-
-	<!-- {{!! After all the posts, we have the previous/next pagination links }}
-	{{pagination}} -->
-
+	</div>
 </main>
