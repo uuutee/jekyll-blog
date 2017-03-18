@@ -2,16 +2,10 @@
 layout: site_frame
 ---
 
-<div class="mainimage">
-	<div class="mainimage__img" {% if site.cover %}style="background-image: url({{ site.cover }})"{% endif %}>
-		Teaser Image
-	</div>
-</div>
+{% include mainimage.html %}
 
-<header class="home-header">
-	<h1 class="home-header__title">{{ site.title }}</h1>
-	<h2 class="home-header__description">{{ site.description }}</h2>
-	<div class="home-header__links">
+<header class="main-header">
+	<div class="main-header__links">
 		{% for social in site.social %}
 			{% if social.url %}
 				<a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}">
@@ -24,38 +18,36 @@ layout: site_frame
 
 <main class="main" role="main">
 	<div class="main__inner">
-
-	<div class="frame clearfix">
-		{% for post in paginator.posts %}
-			<article class="article" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-				<div class="article__inner">
-					<header class="article__header">
-						<h2 class="article__title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
-					</header>
-					<section class="article__excerpt" itemprop="description">
-						<p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
-					</section>
-					<div class="article__meta">
-						<time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+		<div class="article-list clearfix">
+			{% for post in paginator.posts %}
+				<article class="article-list__item" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+					<div class="article-list__inner">
+						<header class="article-list__header">
+							<h2 class="article-list__title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+						</header>
+						<section class="article-list__excerpt" itemprop="description">
+							<p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+						</section>
+						<div class="article-list__meta">
+							<time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+						</div>
 					</div>
-				</div>
-			</article>
-		{% endfor %}
-	</div>
+				</article>
+			{% endfor %}
+		</div>
 
-	<nav class="pagination" role="navigation">
-		{% if paginator.next_page %}
-			<a class="newer-posts" href="/page{{paginator.next_page}}">&larr; Older posts</a>
-		{% endif %}
-		<span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
-		{% if paginator.previous_page %}
-			{% if paginator.page == 2 %}
-				<a class="older-posts" href="/">Newer posts &rarr;</a>
-			{% else %}
-				<a class="older-posts" href="/page{{paginator.previous_page}}">Newer posts &rarr;</a>
+		<nav class="pagination" role="navigation">
+			{% if paginator.next_page %}
+				<a class="newer-posts" href="/page{{paginator.next_page}}">&larr; Older posts</a>
 			{% endif %}
-		{% endif %}
-	</nav>
-
+			<span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+			{% if paginator.previous_page %}
+				{% if paginator.page == 2 %}
+					<a class="older-posts" href="/">Newer posts &rarr;</a>
+				{% else %}
+					<a class="older-posts" href="/page{{paginator.previous_page}}">Newer posts &rarr;</a>
+				{% endif %}
+			{% endif %}
+		</nav>
 	</div>
 </main>

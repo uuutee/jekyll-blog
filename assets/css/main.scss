@@ -9,16 +9,7 @@
 @import "foundation/vars";
 
 // mixins
-@mixin respond-to($breakpoint) {
-	@media only screen and (max-width: $breakpoint + px) {
-		@content;
-	}
-}
-
-// Only needed for syntax highlighting
-%vertical-rhythm {
-	margin-bottom: $rs;
-}
+@import "foundation/mixin";
 
 // foundation
 @import "foundation/reset";
@@ -30,9 +21,10 @@
 @import "layout/header";
 @import "layout/drawer";
 @import "layout/mainimage";
-@import "layout/home-header";
 @import "layout/main";
 @import "layout/footer";
+@import "layout/main-header";
+@import "layout/article-list";
 @import "layout/article";
 
 // component
@@ -40,28 +32,4 @@
 @import "component/share";
 @import "component/bottom-closer";
 @import "component/category-list";
-
-// 未整理
-pre,
-code {
-	font-size: 15px;
-	border: 1px solid #e8e8e8;
-	border-radius: 3px;
-	background-color: #eef;
-}
-
-code {
-	padding: 1px 5px;
-}
-
-pre {
-	padding: 8px 12px;
-	overflow-x: scroll;
-
-	> code {
-		border: 0;
-		padding-right: 0;
-		padding-left: 0;
-		background: none;
-	}
-}
+@import "component/toc";

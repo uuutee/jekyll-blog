@@ -3,7 +3,6 @@
 (function ($) {
 	"use strict";
 	$(document).ready(function(){
-
 		// mainimage
 		var $window = $(window),
 		$image = $('.article__image-image, .mainimage__img');
@@ -34,18 +33,17 @@
 				}
 			}
 		});
+
+		// drawer
+		$('.drawer-btn').on('click', function(event) {
+			event.preventDefault();
+			if (!$('#container-inner').hasClass('drawer-open')) {
+				$('#container-inner').addClass('drawer-open');
+			} else {
+				$('#container-inner').removeClass('drawer-open');            
+			}
+		});
 	});
 }(jQuery));
-
-jQuery(function($) {
-	$('.drawer-btn').on('click', function(event) {
-		event.preventDefault();
-		if (!$('#container-inner').hasClass('drawer-open')) {
-			$('#container-inner').addClass('drawer-open');
-		} else {
-			$('#container-inner').removeClass('drawer-open');            
-		}
-	});
-});
 </script>
 

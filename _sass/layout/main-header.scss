@@ -1,0 +1,35 @@
+.main-header {
+	width: 100%;
+	max-width: 640px;
+	margin: 0 auto;
+	position: relative;
+	padding: 50px 0;
+
+	@include respond-to(768) {
+		padding: $rs;
+	}
+
+	&__title{
+		text-align: right;
+		font-weight: 700;
+		font-style: normal;
+		font-size: $rs;
+		line-height: 1.1;
+		color: #666665;
+	}
+
+	&__links {
+		text-align: center;
+		color: #ccc;
+		font-size: $rs * 2;
+
+		a {
+			text-decoration: none;
+			color: #999;
+
+			&:hover {
+				color: #333;
+			}
+		}
+	}
+}
