@@ -265,11 +265,16 @@ main {
   right: 10px;
   width: 52px;
   height: 52px;
-  background-color: #123346;
-  border: 1px solid #2a4859; }
+  border: 1px solid #123346; }
   .header__btn .fa {
-    color: #fff;
+    color: #123346;
     font-size: 28px; }
+    .header__btn .fa::before {
+      content: "\f0c9"; }
+  .drawer-open .header__btn {
+    border: none; }
+    .drawer-open .header__btn .fa::before {
+      content: "\f00d"; }
 
 #content {
   min-height: 100vh;
