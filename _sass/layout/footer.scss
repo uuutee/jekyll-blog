@@ -1,0 +1,19 @@
+.footer {
+  margin: 0 auto;
+  padding: ($rs * 3) 0;
+  width: 100%;
+  max-width: 640px;
+  font-size: $rs / 4 * 3;
+  text-align: center;
+  color: #999;
+  line-height: $rs * 1.1;
+
+  a {
+    color: #666;
+    text-decoration: none;
+
+    &:hover {
+      color: #333;
+    }
+  }
+}
