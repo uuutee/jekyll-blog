@@ -1,6 +1,7 @@
 # Build settings
 gems:
   - jekyll-paginate
+  - github-pages
 
 # Site settings
 title: "uuutee.log"
