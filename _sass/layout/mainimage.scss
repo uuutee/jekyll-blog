@@ -2,10 +2,19 @@
 	position: relative;
 	overflow: hidden;
 	height: 450px;
-	background-color: #000;
+	background-color: #000;	
 
 	@include respond-to(768) {
 		height: 100vh;
+	}
+
+	&::after{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+	    width: 100%;
+	    height: 100%;
 	}
 
 	&__img {
@@ -17,6 +26,8 @@
 		right: 0;
 		bottom: 0;
 		text-indent: -9999px;
+		// -webkit-filter: blur(5px);
+		//         filter: blur(5px);
 	}
 
 	&__inner{

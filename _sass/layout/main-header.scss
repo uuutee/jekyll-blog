@@ -9,13 +9,12 @@
 		padding: $rs;
 	}
 
-	&__title{
+	&__category{
 		text-align: right;
-		font-weight: 700;
-		font-style: normal;
 		font-size: $rs;
-		line-height: 1.1;
-		color: #666665;
+		line-height: 1;
+		font-weight: 300;
+		color: #666;
 	}
 
 	&__links {
