@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: site_frame
 ---
 
 <div class="mainimage">
@@ -8,10 +8,10 @@ layout: home
 	</div>
 </div>
 
-<header class="header">
-	<h1 class="header__title">{{ site.title }}</h1>
-	<h2 class="header__description">{{ site.description }}</h2>
-	<div class="header__links">
+<header class="home-header">
+	<h1 class="home-header__title">{{ site.title }}</h1>
+	<h2 class="home-header__description">{{ site.description }}</h2>
+	<div class="home-header__links">
 		{% for social in site.social %}
 			{% if social.url %}
 				<a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}">

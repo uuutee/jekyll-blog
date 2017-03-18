@@ -23,14 +23,15 @@
 
 // layout
 @import "layout/layout";
-@import "layout/mainimage";
 @import "layout/header";
+@import "layout/drawer";
+@import "layout/mainimage";
+@import "layout/home-header";
 @import "layout/main";
 @import "layout/footer";
 @import "layout/article";
 
 // component
-@import "component/header-menu";
 @import "component/pagination";
 @import "component/share";
 @import "component/bottom-closer";

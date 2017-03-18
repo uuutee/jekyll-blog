@@ -5,22 +5,19 @@
 <html lang="ja">
 	{% include head.html %}
 	<body>
-		{% include header.html %}
-
 		<div id="container">
-			<div id="container-inner">
+			<div id="container-inner" class="drawer-open">
+				{% include header.html %}
+
 				<div id="content">
 					<div id="content-inner">
 						{{ content }}
 					</div>
 				</div>
-				<!-- /#content -->
 
 				{% include footer.html %}
 			</div>
 		</div>
-		<!-- /#container -->
-
 		{% include javascripts.html %}
 	</body>
 </html>
