@@ -1,5 +1,4 @@
 ---
-
 ---
 
 // vender
@@ -21,6 +20,11 @@
 	margin-bottom: $rs;
 }
 
+// foundation
+@import "foundation/reset";
+@import "foundation/typography";
+@import "foundation/animation";
+
 // layout
 @import "layout/layout";
 @import "layout/header";
@@ -35,6 +39,7 @@
 @import "component/pagination";
 @import "component/share";
 @import "component/bottom-closer";
+@import "component/category-list";
 
 // 未整理
 pre,

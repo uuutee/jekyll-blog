@@ -1,0 +1,16 @@
+.category-list{
+	&__item{
+		color: #fff;
+		a{
+			display: block;
+			padding: $rs;
+			text-align: center;
+			color: #fff;
+			border-bottom: 1px solid #2a4859;
+			background-color: #123346;
+			&:hover{
+				background-color: #2a4859;
+			}
+		}
+	}
+}
