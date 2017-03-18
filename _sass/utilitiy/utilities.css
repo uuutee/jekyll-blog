@@ -1,0 +1,934 @@
+@charset "utf-8";
+
+/* ////////////////////////////////////////////
+ *                 Utility
+ * //////////////////////////////////////////// */
+
+/* Typography
+------------------------------------------*/
+/*
+ * font awesome 
+ * (14px, 2rem, 42px, 56px, 70px, 98pxだときれいに表示される)
+ */
+
+.fa{
+	padding: 0 2px;
+	font-size: 14px;
+	vertical-align: baseline;
+}
+
+/* family */
+.serif{
+	font-family: "游明朝体","Yu Mincho",YuMincho,"ヒラギノ明朝 Pro W3","Hiragino Mincho Pro","ＭＳ Ｐ明朝","MS PMincho",serif;
+}
+.alphanumeric{
+	font-family: Verdana, Arial, sans-serif;
+}
+
+/* first large */
+.firstlarge:first-letter{
+	float: left;
+	padding: 0.1em 0.2em 0 0;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+/* marker */
+.marker-red{
+	font-weight: bold;
+	background: linear-gradient(transparent 40%, rgba(255,170,170,0.5) 40%);
+}
+.marker-pink{
+	font-weight: bold;
+	background: linear-gradient(transparent 40%, rgba(255,153,255,0.5) 40%);
+}
+.marker-yellow{
+	font-weight: bold;
+	background: linear-gradient(transparent 40%, rgba(255,255,102,0.5) 40%);
+}
+.marker-green{
+	font-weight: bold;
+	background: linear-gradient(transparent 40%, rgba(102,255,204,0.5) 40%);
+}
+.marker-blue{
+	font-weight: bold;
+	background: linear-gradient(transparent 40%, rgba(102,204,255,0.5) 40%);
+}
+
+/* heading smal */
+.h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, .h4 .small, .h4 small, .h5 .small, .h5 small, .h6 .small, .h6 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small, h4 .small, h4 small, h5 .small, h5 small, h6 .small, h6 small{
+	font-weight: 400;
+	line-height: 1;
+	opacity: 0.7;
+	margin-left: 5px;
+	font-size: 77%;
+}
+
+.blockquote{
+	font-size: 1rem;
+}
+
+
+
+/* Clear
+------------------------------------------*/
+.clear{
+	clear: both;
+}
+
+
+
+/* Margin
+------------------------------------------*/
+.mt0{  margin-top: 0px  !important; }
+.mt5{  margin-top: 5px  !important; }
+.mt10{ margin-top: 10px !important; }
+.mt15{ margin-top: 15px !important; }
+.mt20{ margin-top: 20px !important; }
+.mt25{ margin-top: 25px !important; }
+.mt30{ margin-top: 30px !important; }
+.mt35{ margin-top: 35px !important; }
+.mt40{ margin-top: 40px !important; }
+.mt45{ margin-top: 45px !important; }
+.mt50{ margin-top: 50px !important; }
+
+.mr0{  margin-right: 0px  !important; }
+.mr5{  margin-right: 5px  !important; }
+.mr10{ margin-right: 10px !important; }
+.mr15{ margin-right: 15px !important; }
+.mr20{ margin-right: 20px !important; }
+.mr25{ margin-right: 25px !important; }
+.mr30{ margin-right: 30px !important; }
+.mr35{ margin-right: 35px !important; }
+.mr40{ margin-right: 40px !important; }
+.mr45{ margin-right: 45px !important; }
+.mr50{ margin-right: 50px !important; }
+
+.ml0{  margin-left: 0px  !important; }
+.ml5{  margin-left: 5px  !important; }
+.ml10{ margin-left: 10px !important; }
+.ml15{ margin-left: 15px !important; }
+.ml20{ margin-left: 20px !important; }
+.ml25{ margin-left: 25px !important; }
+.ml30{ margin-left: 30px !important; }
+.ml35{ margin-left: 35px !important; }
+.ml40{ margin-left: 40px !important; }
+.ml45{ margin-left: 45px !important; }
+.ml50{ margin-left: 50px !important; }
+
+.mb0{  margin-bottom: 0px !important; }
+.mb5{  margin-bottom: 5px !important; }
+.mb10{ margin-bottom: 10px !important; }
+.mb15{ margin-bottom: 15px !important; }
+.mb20{ margin-bottom: 20px !important; }
+.mb25{ margin-bottom: 25px !important; }
+.mb30{ margin-bottom: 30px !important; }
+.mb35{ margin-bottom: 35px !important; }
+.mb40{ margin-bottom: 40px !important; }
+.mb45{ margin-bottom: 45px !important; }
+.mb50{ margin-bottom: 50px !important; }
+
+
+
+/* Alignments
+------------------------------------------*/
+/* align */
+.alignleft{
+	float: left;
+	margin: 0.5rem 1rem 0.5rem 0;
+}
+.alignright{
+	float: right;
+	margin: 0.5rem 0 0.5rem 1rem;
+}
+.aligncenter{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+/* Image shapes
+------------------------------------------*/
+.img-shadow{
+	-webkit-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.8);
+	-moz-box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.8);
+﻿}
+
+
+
+/* Tables
+------------------------------------------*/
+/* table */
+.table{
+	margin: 0 0 0.8rem 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	padding: 0;
+	width: 100%;
+}
+.table th,
+.table td{
+	font-weight: normal;	
+}
+.table td ul li{
+	margin: 0 0 0 20px;
+	list-style: outside disc;
+}
+
+/* bordered */
+.table-bordered th,
+.table-bordered td{
+	border: 1px solid rgba(185,185,185,0.5);
+}
+.table-bordered th{
+	background-color: rgba(186,186,186,0.5);
+}
+
+/* dashed */
+.table-dashed th,
+.table-dashed td{
+	border-top: none;
+	border-bottom: 1px dashed rgba(185,185,185,0.5);
+}
+.table-dashed tr:last-child th,
+.table-dashed tr:last-child td{
+	border-bottom: none;
+}
+.table-dashed td{
+	border-left: 1px dashed rgba(185,185,185,0.5);
+}
+
+/* striped */
+.table-striped tr:nth-of-type(odd){
+	background-color: rgba(186,186,186,0.5);
+}
+
+
+
+/* for default
+------------------------------------------*/
+/* jquery.rollOver.js */
+.ro-switch,
+.ro-fswitch{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	display: inline-block;
+	*display: inline;
+	zoom: 1;
+}
+
+
+
+/* for sphone
+------------------------------------------*/
+/* modal */
+#modal{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}
+#modal-inner{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#modal-inner .modal-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.7;
+}
+#modal-inner .modal-body{
+	display: box;
+	display: -webkit-box;
+	display: -moz-box;
+	box-align: center;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	box-pack: center;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 1001;
+}
+#modal-inner .modal-body img{
+	max-width: 100%;
+	max-height: 100%;
+}
+
+
+
+/* Pagination
+------------------------------------------*/
+.pagination-wrap{
+	text-align: center;
+	font-size: 0; /* fix inline space */
+}
+.pagination{
+	line-height: 1;
+}
+.page-item{
+	font-size: 1rem; /* fix inline space */
+}
+.page-link{
+	padding: 0.6rem 0.9rem;
+}
+.page-link:focus,
+.page-link:hover,
+.page-item.active .page-link,
+.page-item.active .page-link:focus,
+.page-item.active .page-link:hover{
+	text-decoration: none;
+}
+
+
+
+/* Googlemap
+------------------------------------------*/
+.googlemap iframe{
+	width: 100%;
+	height: 400px;
+}
+
+
+
+/* Search
+------------------------------------------*/
+.side-search,
+.side-search-cat{
+	margin: 0 0 20px 0;
+}
+
+
+
+/* Calendar
+------------------------------------------*/
+#wp-calendar{
+	width: 100%;
+	margin: 0 0 20px 0;
+	padding: 10px;
+	text-align: center;
+	background: rgba(255,255,255,0.15);
+}
+#wp-calendar caption{
+	padding-top: 0;
+	padding-bottom: 5px;
+	margin: 0 0 5px 0;
+	text-align: center;
+	color: inherit;
+	font-size: 15px;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(186,186,186,0.5);
+}
+#wp-calendar caption a{
+}
+#wp-calendar table{
+	width: 100%;
+}
+#wp-calendar thead th{
+	padding-top: 5px;
+	font-weight: bold;
+	font-size: 12px;
+	text-align: center;
+}
+#wp-calendar tbody td{
+	font-size: 12px;
+	text-align: center;
+}
+#wp-calendar thead th:first-child,
+#wp-calendar tbody td:first-child{
+	color: #a00;
+}
+#wp-calendar thead th:last-child,
+#wp-calendar tbody td:last-child{
+	color: #00a;
+}
+#wp-calendar tbody td a{
+	font-weight: bold;
+	text-decoration: underline;
+}
+#wp-calendar tbody td a:hover{
+	text-decoration: none;
+}
+
+
+
+/* Postie
+------------------------------------------*/
+.default .postie-image{
+	float: left;
+	display: inline;
+}
+.default .postie-image img{
+	margin: 0 20px 20px 0;
+}
+.sphone .postie-image{
+	margin: 0 auto 20px;
+}
+
+
+
+/* Entry
+------------------------------------------*/
+.entry-content h3, .h3{
+	clear: both;
+	margin: 1.8rem 0 0.8rem 0;
+}
+.entry-content h4, .h4{
+	clear: both;
+	margin: 1.2rem 0 0.8rem 0;
+}
+.entry-content h5, .h5{
+	clear: both;
+	margin: 1.2rem 0 0.8rem 0;
+}
+.entry-content h6, .h6{
+	clear: both;
+	margin: 1.2rem 0 0.8rem 0;
+}
+
+.entry-content p{
+	margin-bottom: 0.8rem;
+}
+.entry-content p:last-child{
+	margin-bottom: 0;
+}
+
+/* unordered list */
+.entry-content ul{
+	margin-bottom: 20px;
+}
+.entry-content ul li{
+	margin-left: 25px;
+	list-style: outside disc;
+}
+
+.entry-content ul li ul{
+	margin-top: 10px;
+	margin-bottom: 15px;
+	list-style-type: none;
+}
+.entry-content ul li ul li{
+	list-style: outside circle;
+}
+
+/* ordered list */
+.entry-content ol{
+	margin-bottom: 20px;
+}
+.entry-content ol li{
+	margin-left: 25px;
+	list-style: outside decimal;
+}
+.entry-content ol li ol{
+	margin-top: 10px;
+	margin-bottom: 15px;	
+}
+
+/* definition list */
+.entry-content dl{
+	margin-bottom: 20px;
+}
+.entry-content dt{
+}
+.entry-content dd{
+	margin-bottom: 0.5rem;
+}
+
+
+
+/* Entry footer
+------------------------------------------*/
+/* entry-footer */
+.entry-footer{
+	margin: 20px 0 0 0;
+	padding: 10px;
+	font-size: 11px;
+}
+.entry-footer .entry-meta{
+	padding: 2px 0 0 0;
+	text-align: right;
+}
+
+/* bookmarks */
+.bookmarks .bookmarks-btn{
+	float: left;
+	display: inline;
+	margin: 0 5px 0 0;
+}
+.bookmarks .twitter{
+	margin: 0 5px 0 0;
+}
+.sphone .bookmarks,
+.sphone .entry-meta{
+	padding: 0;
+	text-align: left;
+}
+
+
+
+/* Templates
+------------------------------------------*/
+.template{
+	margin: 0 0 20px 0;
+}
+.template h2, .template h3, .template h4, .template h5, .template h6{
+	margin-top: 0;
+}
+.template.row > div{
+	margin-bottom: 10px;
+}
+.template-img-left{
+	float: left;
+	display: inline;
+	margin-right:  20px;
+	margin-bottom: 20px;
+}
+.template-img-right{
+	float: right;
+	display: inline;
+	margin-left:   20px;
+	margin-bottom: 20px;
+}
+.template-text{
+	overflow: hidden;
+}
+.template-text-left{
+	float: left;
+	margin-right: 20px;
+}
+.template-text-right{
+	float: right;
+	margin-left: 20px;
+}
+.template-backpattern{
+	padding: 2%;
+	background: url(/images/common/template-backpattern-bg.png) repeat 0 0;
+	border: #eaeaea 2px solid;
+}
+
+/* sphone */
+.sphone .template-img-left,
+.sphone .template-img-right{
+	display: block;
+	float: none;
+	margin: 0 auto 10px;
+	text-align: center;
+}
+.sphone .template-text-left,
+.sphone .template-text-right{
+	float: none;
+	margin: 0 auto 10px;
+}
+
+
+
+/* Sample
+------------------------------------------*/
+#sample-section-10 li{
+	margin-left: 0;
+}
+
+.term-sample-col-1 #main{
+	float: none;
+	width: 100%;
+}
+.term-sample-col-1 #sidebar{
+	display: none;
+}
+
+
+
+/* Forms
+------------------------------------------*/
+.form{
+}
+.form-header{
+	margin-bottom: 1.2rem;
+}
+.form-content{
+}
+.form-item{
+	padding-top:    0.75rem;
+	padding-bottom: 0.75rem;
+	border-top: 1px solid rgba(186,186,186,0.5);
+}
+.form-item-title{
+	font-weight: bold;
+}
+.form-item-title .required{
+	padding: 0 0 0 2px;
+	color: rgba(255,0,0,0.9);
+}
+.form-item-title .summary{
+	font-size: 11px;
+	font-weight: normal;
+}
+.form-btn-wrap{
+	text-align: center;
+	border-top: 1px solid rgba(186,186,186,0.5);	
+	padding: 10px;
+}
+
+
+
+/* Contact Form 7
+------------------------------------------*/
+/* error */
+.screen-reader-response{
+	display: none;
+}
+.wpcf7-validation-errors,
+.wpcf7-not-valid-tip{
+	border: none;
+	display: block;
+	color: #f00;
+	font-size: 11px;
+}
+
+/* success */
+.wpcf7-form.sent .form-header,
+.wpcf7-form.sent .form-content{
+	display: none;
+}
+.wpcf7-mail-sent-ok{
+	border: none;
+}
+
+
+
+/* Slick
+------------------------------------------*/
+/* base */
+.slick-slider{
+	display: block;
+	position: relative;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	-webkit-touch-callout: none;
+	-khtml-user-select: none;
+	-ms-touch-action: pan-y;
+	touch-action: pan-y;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.slick-list{
+	display: block;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+.slick-list:focus{
+	outline: none;
+}
+.slick-list.dragging{
+	cursor: pointer;
+	cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list{
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+
+.slick-track{
+	display: block;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.slick-track::before,
+.slick-track::after{
+	display: table;
+	content: '';
+}
+.slick-track::after{
+	clear: both;
+}
+.slick-loading .slick-track{
+	visibility: hidden;
+}
+
+.slick-slide{
+	display: none;
+	float: left;
+	height: 100%;
+	min-height: 1px;
+}
+[dir='rtl'] .slick-slide{
+	float: right;
+}
+.slick-slide img{
+	display: block;
+}
+.slick-slide.slick-loading img{
+	display: none;
+}
+.slick-slide.dragging img{
+	pointer-events: none;
+}
+.slick-initialized .slick-slide{
+	display: block;
+}
+.slick-loading .slick-slide{
+	visibility: hidden;
+}
+.slick-vertical .slick-slide{
+	display: block;
+	height: auto;
+}
+.slick-arrow.slick-hidden {
+	display: none;
+}
+
+/* Arrows */
+.slick-prev,
+.slick-next{
+	/* reset */
+	cursor: pointer;
+	padding: 0;
+	font-size: 0;
+	line-height: 0;
+	color: transparent;
+	border: none;
+	outline: none;
+	background: transparent;
+
+	display: block;
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	width:  2rem;
+	height: 2rem;
+	margin-top: -0.5rem;
+}
+.slick-prev{
+	left: 0;
+}
+.slick-next{
+	right: 0;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus{
+	/* reset */
+	color: transparent;
+	outline: none;
+	background: transparent;
+}
+.slick-prev:hover::before,
+.slick-prev:focus::before,
+.slick-next:hover::before,
+.slick-next:focus::before{
+	opacity: 1;
+}
+.slick-prev.slick-disabled::before,
+.slick-next.slick-disabled::before{
+	opacity: .25;
+}
+.slick-prev::before,
+.slick-next::before{
+	display: block;
+	width: 2rem;
+	height: 2rem;
+	text-align: center;
+
+	/* fontawesome */
+	font-weight: normal;
+	font-size: 2rem;
+	font-family: 'FontAwesome';
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	opacity: .75;
+	color: white;
+}
+.slick-prev::before{
+	content: '\f104';
+}
+.slick-next::before{
+	content: '\f105';
+}
+[dir='rtl'] .slick-prev{
+	right: 0;
+	left: auto;
+}
+[dir='rtl'] .slick-prev::before{
+	content: '\f105';
+}
+[dir='rtl'] .slick-next{
+	right: auto;
+	left: 0;
+}
+[dir='rtl'] .slick-next::before{
+	content: '\f104';
+}
+
+
+/* Dots */
+.slick-dots{
+	display: block;
+	margin-top: 5px;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+}
+.slick-dots li{
+	position: relative;
+	display: inline-block;
+	margin: 0 5px;
+	cursor: pointer;
+}
+.slick-dots li button{
+	display: block;
+	width: 0.8rem;
+	height: 0.8rem;
+	padding: 5px;
+	cursor: pointer;
+
+	/* reset */
+	font-size: 0;
+	line-height: 0;
+	color: transparent;
+	border: 0;
+	outline: none;
+	background: transparent;
+}
+.slick-dots li button::before{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0.8rem;
+	height: 0.8rem;
+	text-align: center;
+	color: #ccc;
+
+	/* fontawesome */
+	content: '\f111';
+	font-weight: normal;
+	font-size: 0.8rem;
+	font-family: 'FontAwesome';
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li button:hover::before,
+.slick-dots li button:focus::before,
+.slick-dots li.slick-active button::before{
+	color: #666;
+}
+
+
+
+/* fontello
+------------------------------------------*/
+@font-face {
+	font-family: 'fontello';
+	src: url('/font/fontello/fontello.eot?69728287');
+	src: url('/font/fontello/fontello.eot?69728287#iefix') format('embedded-opentype'),
+			 url('/font/fontello/fontello.woff?69728287') format('woff'),
+			 url('/font/fontello/fontello.ttf?69728287') format('truetype'),
+			 url('/font/fontello/fontello.svg?69728287#fontello') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: 'fontello';
+		src: url('/font/fontello/fontello.svg?69728287#fontello') format('svg');
+	}
+}
+*/
+ 
+[class^="c-fa-"]:before, [class*=" c-fa-"]:before {
+	font-family: "fontello";
+	font-style: normal;
+	font-weight: normal;
+	speak: none;
+ 
+	display: inline-block;
+	text-decoration: inherit;
+	width: 1em;
+	margin-right: .2em;
+	text-align: center;
+	/* opacity: .8; */
+ 
+	/* For safety - reset parent styles, that can break glyph codes*/
+	font-variant: normal;
+	text-transform: none;
+ 
+	/* fix buttons height, for twitter bootstrap */
+	line-height: 1em;
+ 
+	/* Animation center compensation - margins should be symmetric */
+	/* remove if not needed */
+	margin-left: .2em;
+ 
+	/* you can be more comfortable with increased icons size */
+	/* font-size: 120%; */
+ 
+	/* Font smoothing. That was taken from TWBS */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+ 
+	/* Uncomment for 3D effect */
+	/* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.c-fa-line:before { content: '\e800'; } /* '' */
+.c-fa-feedly:before { content: '\e801'; } /* '' */
+.c-fa-raspberrypi:before { content: '\e802'; } /* '' */
+.c-fa-sass:before { content: '\e803'; } /* '' */
+.c-fa-netflix:before { content: '\e804'; } /* '' */
+.c-fa-hatenabookmark:before { content: '\e805'; } /* '' */
+.c-fa-gulp:before { content: '\e806'; } /* '' */
+.c-fa-ubuntu:before { content: '\e807'; } /* '' */
+.c-fa-hulu:before { content: '\e808'; } /* '' */
+.c-fa-ruby:before { content: '\e809'; } /* '' */
+.c-fa-heroku:before { content: '\e80a'; } /* '' */
+.c-fa-gumtree:before { content: '\e80b'; } /* '' */
+.c-fa-jenkins:before { content: '\e80c'; } /* '' */
+.c-fa-nintendo:before { content: '\e80d'; } /* '' */
+.c-fa-fbmessenger:before { content: '\e80e'; } /* '' */
+.c-fa-mixi:before { content: '\e80f'; } /* '' */
+.c-fa-microsoftonenote:before { content: '\e810'; } /* '' */
+.c-fa-playstation:before { content: '\e811'; } /* '' */
+.c-fa-laravel:before { content: '\e812'; } /* '' */
+.c-fa-javascript:before { content: '\e813'; } /* '' */
+.c-fa-googleplay:before { content: '\e814'; } /* '' */
+.c-fa-bootstrap:before { content: '\e815'; } /* '' */
+.c-fa-meetup:before { content: '\e816'; } /* '' */
+.c-fa-kickstarter:before { content: '\e817'; } /* '' */
+.c-fa-microsoftaccess:before { content: '\e818'; } /* '' */
+.c-fa-microsoftpowerpoint:before { content: '\e819'; } /* '' */
+.c-fa-microsoftexcel:before { content: '\e81a'; } /* '' */
+.c-fa-microsoftoutlook:before { content: '\e81b'; } /* '' */
+.c-fa-microsoftword:before { content: '\e81c'; } /* '' */
+.c-fa-microsoft:before { content: '\e81d'; } /* '' */
+.c-fa-w3c:before { content: '\e81e'; } /* '' */
+.c-fa-lego:before { content: '\e81f'; } /* '' */

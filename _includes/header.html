@@ -1,2 +1,13 @@
-<!-- header start -->
-<!-- header end -->
+<div class="header-menu">
+	<div class="header-menu__btn">
+		<i class="fa fa-bars" aria-hidden="true"></i>
+	</div>
+	<div class="header-menu__content">
+		<ul class="category-list">
+			{% for category in site.categories %}
+				<li class="category-list-item"><a href="/category/{{ category[0] }}"><h3>{{ category[0] }}</h3></a></li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
+<!-- /.header-menu -->
