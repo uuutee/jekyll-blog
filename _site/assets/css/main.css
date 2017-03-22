@@ -196,6 +196,13 @@ html {
   -webkit-box-sizing: inherit;
   box-sizing: inherit; }
 
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+a {
+  text-decoration: none; }
+
 /* code */
 pre,
 code {
@@ -215,13 +222,6 @@ pre {
     padding-right: 0;
     padding-left: 0;
     background: none; }
-
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-a {
-  text-decoration: none; }
 
 a, a:hover {
   -webkit-transition: 0.3s ease-in-out;

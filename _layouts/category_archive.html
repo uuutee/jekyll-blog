@@ -3,7 +3,7 @@ layout: site_frame
 ---
 
 <header class="main-header">
-	<h1 class="main-header__category">{{ page.title }}</h1>
+	<h1 class="main-header__category">{{ page.category_name }}</h1>
 </header>
 
 <main class="main" role="main">
@@ -11,8 +11,8 @@ layout: site_frame
 		<div class="article-list clearfix">
 			{% for post in site.posts %}
 				{% for category in post.categories %}
-					{% if category == page.category %}
-					<article class="article-list__item" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+					{% if category == page.category_name %}
+						<article class="article-list__item" itemscope itemtype="http://schema.org/BlogPosting" role="article">
 							<div class="article-list__inner">
 								<header class="article-list__header">
 									<h2 class="article-list__title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
@@ -27,7 +27,7 @@ layout: site_frame
 						</article>
 					{% endif %}
 				{% endfor %}
-			{% endfor %}						
+			{% endfor %}
 		</div>
 	</div>
 </main>

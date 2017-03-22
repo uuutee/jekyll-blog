@@ -1,8 +1,8 @@
 <div class="drawer">
 	<ul class="category-list">
 		<li class="category-list__item"><a href="/"><h3>HOME</h3></a></li>
-		{% for category in site.categories %}
-		<li class="category-list__item"><a href="/category/{{ category[0] }}"><h3>{{ category[0] }}</h3></a></li>
+		{% for category in site.my_categories %}
+		<li class="category-list__item"><a href="/category/{{ category.category_slug }}"><h3>{{ category.category_name }}</h3></a></li>
 		{% endfor %}
 	</ul>
 </div>

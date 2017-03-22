@@ -9,9 +9,7 @@ description: > # this means to ignore newlines until "email:"
    WEB DEVELOPMENT NOTE
 
 email: uuuteenet@gmail.com
-# blog logo
 logo: "/assets/images/logo.png"
-# blog cover
 cover: "/assets/images/mainimg.jpg"
 
 name: 'uuutee'
@@ -22,11 +20,7 @@ paginate:	5
 
 url: "https://uuutee.github.io/" # the base hostname & protocol for your site
 baseurl: ""
-#used to display twitter cards
 twitter_handle: '@uuutee'
-
-#fill in disqus shortname to use disqus
-#disqus: disqus-shortname
 
 # social icons and sharing options
 social:
@@ -51,17 +45,11 @@ social:
     share_title:
     share_link:
 
-#  - icon:	google-plus
-#    url:	https://google.com/???
-#    desc:	Add me on google+
-#    share_url:
-#    share_title:
-#    share_link:
-
 # category archive
-category_title_prefix: 'category: '
-category_title_suffix: ''
-category_dir: category
+collections:
+  my_categories:
+    output: true
+    permalink: /category/:name/
 
 # table of contents
 minItemsToShowToc: 1 # 目次の項目を表示する最小数 
