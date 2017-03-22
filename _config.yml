@@ -24,6 +24,13 @@ twitter_handle: '@uuutee'
 
 # social icons and sharing options
 social:
+  - icon: github
+    url:  https://github.com/uuutee
+    desc: Fork me on github
+    share_url:
+    share_title:
+    share_link:
+
   - icon:	twitter
     url:	https://twitter.com/uuutee
     desc: Follow me on twitter
@@ -37,13 +44,6 @@ social:
 #    share_url: https://www.facebook.com/sharer.php
 #    share_title: ?t=
 #    share_link: "&amp;u="
-
-  - icon:	github
-    url:	https://github.com/uuutee
-    desc:	Fork me on github
-    share_url:
-    share_title:
-    share_link:
 
 # category archive
 collections:
