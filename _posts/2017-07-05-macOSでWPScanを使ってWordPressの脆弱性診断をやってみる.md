@@ -162,8 +162,8 @@ WPScanのデータベースを更新する
 
 
 ## 参考	
-- [WPScan by the WPScan Team](https://wpscan.org/)
-- [[技術ブログvol.7] WPScanを使ってWordPressサイトをチェックしてみる | 技術情報ブログ | マネージドホスティングのディーネット](http://www.denet.ad.jp/technology/2013/11/vol7-wpscanwordpress.html)　　
+- [WPScan by the WPScan Team](https://wpscan.org/)  
+- [技術ブログvol.7 WPScanを使ってWordPressサイトをチェックしてみる | 技術情報ブログ | マネージドホスティングのディーネット](http://www.denet.ad.jp/technology/2013/11/vol7-wpscanwordpress.html)　　
 - [rbenv+ruby-build で ruby のバージョンを2.4.0 に上げたときのメモ - Qiita](http://qiita.com/selmertsx/items/d4b281442a61da5f15b4)  
 - [bundle install で nokogiri をインストールしろと言われる解決方法 - Qiita](http://qiita.com/pugiemonn/items/4b23a709ed194b02be6d)　　
 - [積んメモ: keg-onlyなパッケージはシンボリックリンクが作られない](http://mosquito7.blogspot.jp/2013/07/keg-only.html)
